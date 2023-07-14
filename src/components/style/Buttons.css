@@ -1,0 +1,84 @@
+.show-btn{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: rgb(32, 31, 31);
+    
+}
+
+.btn{
+  color: white;
+}
+@media (min-width: 800px) {
+    .show-btn {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  
+}
+
+.eual{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.btn :last-child{
+    font-weight: medium;
+    font-size: 20px;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    color: rgb(197, 192, 210);
+    /* background-color:  */
+}
+
+.clr{
+    color: #b93331;
+}
+
+.exp{
+    color:rgb(45, 88, 110);
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    margin: 6px auto;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    border: 0px;
+    user-select: none;
+  }
+
+  @media (min-width: 800px) {
+    .btn:hover {
+      background-color: #6dd5ed;
+      color: white;
+      transition: background-color 0.3s ease;
+      border-radius: 50%;
+    }
+  
+    .btn:active,
+    .btn.touched {
+      background-color: #48b1bf;
+      color: white;
+      transition: background-color 0.3s ease;
+      border-radius: 50%;
+    }
+  
+    .btn:active {
+      transform: scale(0.9);
+    }
+  
+    .btn.touched {
+      pointer-events: none;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .btn:active {
+      transform: scale(0.9);
+    }
+  }

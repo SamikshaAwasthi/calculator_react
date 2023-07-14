@@ -1,0 +1,47 @@
+.display{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(42, 42, 46);
+}
+
+@media (min-width: 800px) {
+    .display {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+}
+
+.expression{
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.input, .value {
+    padding: 10px;
+    text-align: right;
+    background-color: transparent;
+    color: #fff;
+    border: 0px;
+    letter-spacing: 1px;
+}
+
+
+.input{
+    font-size: 25px;
+}
+
+.value{
+    font-size: 15px;
+}
+
+.input::placeholder,.value::placeholder{
+    color: white;
+}
+
+.input:focus-visible , .value:focus-visible{
+    outline: none;
+    outline-width:0px;
+}
